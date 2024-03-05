@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="static/css/item-list.css">
+<div class='item-wrapper'>
+    {{>header}}
+     <div class="items">
+        {{#each data}}
+        <div class="item-box">  
+        <img class="item-image" src="https://img.freepik.com/free-photo/portrait-handsome-smiling-stylish-young-man-model-wearing-jeans-clothes-sunglasses-fashion-man_158538-5015.jpg?w=1800&t=st=1707811096~exp=1707811696~hmac=24e4aa5617bd4656638bf4015668e36f52511672bd0f5c986ad2a179caf50a61" alt="Item Image">
+        <div class="item-details">
+            <div class="item-name">{{dataValues.product_name}}</div>
+            <div class="description">{{dataValues.description}}</div>
+            <div class="price">{{dataValues.price}}</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

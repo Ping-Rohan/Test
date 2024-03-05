@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="static/css/adminConsole.css">
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Admin Consle</h2>
+      
+        <div class="menu-item"><a href="#">Add Clothes</a></div>
+        <button class="logout-btn">Logout</button>
+    </div>
+    <div class="content">
+        <h1>Welcome to E-commerce Admin Console</h1>
+        <p>Manage your products, orders, customers, and settings here.</p>
+
+    <form id="clothesForm" action="/product/create" method="post" enctype="mulipart/form-data">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="product_name" required>
+        </div>
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required>
+        </div>
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" step="0.01" min="0" required>
+        </div>
+        <div class="form-group">
+            <label>Stock Quantity</label>
+            <input type="number" name="stockquantity">
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" name="description">
+        </div>
+         <div class="form-group">
+            <label>Item Images</label>
+            <input type="file" name="image">
+        </div>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+
+    </div>
+</div>
